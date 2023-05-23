@@ -1,0 +1,279 @@
+body{
+    background: linear-gradient(to left, #0f0c29, #302b63, #24243e);
+}
+#container{
+    display: flex;
+    gap: 8rem   ;
+    margin-top: 14rem;
+}
+.crveni{
+    background-color: red;
+}
+.plavi{
+    background-color: blue;
+}
+.crni{
+    background-color: black;
+}
+.ljubicasti{
+    background-color: purple;
+}
+.zeleni{
+    background-color: green;
+}
+.zuti{
+    background-color: yellow;
+}
+.narandzasti{
+    background-color: orange;
+}
+.braon{
+    background-color: brown;
+    z-index: 0;
+}
+
+td{height: 6rem;
+    width: 4.5rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+table{
+    background-color:transparent;
+    
+}
+.checkbox{
+    display: none;
+}
+label{
+
+    cursor: pointer;
+}
+
+.okvirbroja{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+}
+.okvirbroja:hover{
+    scale: 1.5;
+    transition: 0.5s;
+}
+.izabrani{
+    background-color: grey;
+    scale:1.5;
+    outline: 2px solid white;
+}
+.neizabrani{
+    background-color: white;
+    color: black;
+}
+#izvuceni_brojevi{
+    width: 55.8rem;
+    height: 37.45rem;
+    position: absolute;
+    top: 15rem;
+    /* border: 1px solid black; */
+}
+#bubanj img, #ispod img{
+    width: 60px;
+    scale: 0.5;
+}
+#bubanj{
+    height: 6rem;
+    position: absolute;
+    width: 55.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    flex-wrap: nowrap;
+    margin-left: -2.5rem;
+}
+#ispod{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 55.8rem;
+    top: 6rem;
+    height: 31.45rem;
+    margin-bottom: 4rem;
+}
+.redlevo{
+    width: 9.3rem;
+    height: 31.45rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+.reddesno{
+    width: 9.3rem;
+    height: 31.45rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+ul{
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin: 0.1rem;
+}
+ul img{
+    position: relative;
+    width: 50px;
+}
+#brojeviSu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 5rem;
+    width: 53.5rem;
+    box-sizing: border-box;
+    gap: 1rem ;
+}
+#brojeviSu img{
+    width: 60px;
+    padding: 5px;
+}
+#brojeviSu span{
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+#broj_uvecano{
+    position: absolute;
+    scale: 1;
+    top: 6rem;
+    right: 21.5rem;
+
+}
+@keyframes animacija{
+    0%{scale: 0;}
+    100%{scale: 1;}
+}
+@keyframes animacija2{
+    0%{opacity: 0;}
+    65%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.grayscale{
+    border: 5px groove red;
+}
+/* img{
+    filter: grayscale(100%);
+} */
+.polje{
+   display: flex;
+   gap: 1rem;
+}
+.polje span{
+    position: relative;
+    top: 15px;
+    left: 8px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+}
+@font-face {
+    font-family: naslov;
+    src: url(./font/3/mexcellent\ rg.otf);
+}
+#h1{
+    font-family: naslov;
+    margin: 0 39rem;
+    font-size: 9rem;
+    height: 9rem;
+    position: absolute;
+    top: -20px;
+    color: magenta;
+    font-weight: 10;}
+#h2{
+    font-family: naslov;
+    margin: 0 39rem;
+    font-size: 9rem;
+    height: 9rem;
+    position: absolute;
+    top: -5px;
+    left: 15px;
+    color: yellow;
+    font-weight: 10;
+}   
+#h3{
+    font-family: naslov;
+    margin: 0 32rem;
+    font-size: 9rem;
+    font-weight: 10;
+    height: 9rem;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: blue;
+}   
+#sacuvajBrojeve{
+    position: absolute;
+    left: 53rem;
+    top: 58rem;
+    width: 200px;
+    height: 60px;
+    font-family: naslov;
+    color: white;
+    background-color: purple;
+    border: none;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+}
+#sacuvajBrojeve:hover{
+    scale: 1.1;
+    transition: 0.7s;
+}
+#strelice{
+ 
+    margin-left: 2rem;
+    
+
+}
+#strelice img{
+    rotate: 180deg;
+    height: 60px;
+    margin-right: 3.9rem;
+    cursor: pointer;
+}
+#strelice img:hover{
+    scale: 1.1;
+    transition: 0.7s;
+}
+#ulog{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+    width: 70px;
+    color: white;
+}
+#dobitak{
+    position: absolute;
+    left: 95rem;
+    top: 58rem;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
